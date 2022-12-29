@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>STUDENT INFORMATION</h1>
+        <button type="button" onclick="MyFun()">Click</button>
+        <br><br>
+        <table border="1" id="demo"></table>
+        <script>
+            function MyFun()
+            {
+                var xhttp=new XMLHttpRequest();
+                xhttp.onreadystatechange=function() {
+                    if(this.readyState==4 && this.status==200)
+                    {
+                        Load_XML_File(this);
+                    }
+                };
+                xhttp.open("GET","Student.xml",true);
+                xhttp.send();
+
+            }
+            function Load_XML_File(xml)
+            {
+                var i;
+                var xmlDoc=xml.responseXML;
+                var table="<tr><th>Name</th><th>Marks</th></tr>";
+                var x=xmlDoc.getElementsByTagName("student_data");
+                for(i=0;i<x.length;i++)
+                {
+                    table+="<tr><td>" +
+                    x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+                    "</td></tr>";
+                    x[i].getElementsByTagName("Marks")[0].childNodes[0].nodeValue +
+                    "</td></tr>";
+                }
+                document.getElementById("demo").innerHTML=table;
+            }
+        </script>
+    </body>
+</html>

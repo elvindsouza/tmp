@@ -1,0 +1,29 @@
+h1{
+font-family:Poor Richard;
+font-size:300%;
+}
+h2{
+font-family:Poor Richard;
+font-size:200%;
+}
+td{
+font-family:Bodoni MT;
+font-size:100%;
+}
+input
+{
+font-family:Bodoni MT;
+font-size:100%;
+margin:5px 0;
+}
+.ab{
+background-color: Gray;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+select{font-family:Bodoni MT;	font-size:100%;		margin:5px 0;	}
