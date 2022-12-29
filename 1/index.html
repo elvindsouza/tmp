@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Vishwakarma University</title>
+    <link rel="icon" href="assets/img/logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .navbar {
+            color: maroon;
+            font-weight: 700;
+        }
+
+        .cardjustified {
+            text-align: justify;
+        }
+
+        header {
+            background-image: url("assets/img/back2.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            height: 600px;
+        }
+
+        div {
+            text-align: justify;
+        }
+
+        .uplinks {
+            margin: 2%;
+            text-align: center;
+            color: #48067e;
+        }
+
+        .uplinks:hover {
+            color: #e27115;
+            text-decoration: underline;
+        }
+
+        .typewrite {
+            text-decoration: none;
+        }
+
+        .width {
+            width: 10%;
+        }
+
+        .width2 {
+            width: 50%;
+        }
+
+        .image {
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .text {
+            margin: 5%;
+            padding: 1%;
+        }
+
+        .image2 {
+            width: 100%;
+            height: 600px;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .footlink {
+            font-size: 50px;
+            display: inline-block;
+            transition: transform .01s;
+            margin: 2%
+        }
+
+        .whats:hover {
+            color: #25D366;
+            transform: scale(2.5);
+        }
+
+        .face:hover {
+            color: #3b5998;
+            transform: scale(2.5);
+        }
+
+        .insta:hover {
+            color: #E1306C;
+            transform: scale(2.5);
+        }
+
+        .tele:hover {
+            color: #0088cc;
+            transform: scale(2.5);
+        }
+
+
+        .mobi:hover {
+            color: #833AB4;
+            transform: scale(2.5);
+        }
+
+        .design {
+            padding-top: 200px;
+            padding-left: 40px;
+        }
+
+        .height {
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p class="navbar w3-left w3-xlarge uplinks "><a href="excel.html" class="navbar"
+                style="text-decoration: none">Initiatives</a></p>
+        <p class="navbar w3-left w3-xlarge uplinks "><a href="dept.html" class="navbar"
+                style="text-decoration: none">Departments</a></p>
+
+
+
+
+        <div class="w3-center w3-text-red width2">
+            <h1 class="design">
+
+                <a href="" class="w3-xxxlarge typewrite">Choose VU to&nbsp;</a>
+                </a>
+                <a href="" class="w3-xxxlarge typewrite" data-period="1000"
+                    data-type='[ "Maximize your potential!", "Accelerate your career!", "Experience safe learning space!"]'>
+                    <span class="wrap"></span>
+                </a>
+            </h1>
+            <script>
+                var TxtType = function (el, toRotate, period) {
+                    this.toRotate = toRotate;
+                    this.el = el;
+                    this.loopNum = 0;
+                    this.period = parseInt(period, 10) || 2000;
+                    this.txt = '';
+                    this.tick();
+                    this.isDeleting = false;
+                };
+
+                TxtType.prototype.tick = function () {
+                    var i = this.loopNum % this.toRotate.length;
+                    var fullTxt = this.toRotate[i];
+
+                    if (this.isDeleting) {
+                        this.txt = fullTxt.substring(0, this.txt.length - 1);
+                    } else {
+                        this.txt = fullTxt.substring(0, this.txt.length + 1);
+                    }
+
+                    this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+                    var that = this;
+                    var delta = 200 - Math.random() * 100;
+
+                    if (this.isDeleting) {delta /= 2;}
+
+                    if (!this.isDeleting && this.txt === fullTxt) {
+                        delta = this.period;
+                        this.isDeleting = true;
+                    } else if (this.isDeleting && this.txt === '') {
+                        this.isDeleting = false;
+                        this.loopNum++;
+                        delta = 500;
+                    }
+
+                    setTimeout(function () {
+                        that.tick();
+                    }, delta);
+                };
+
+                window.onload = function () {
+                    var elements = document.getElementsByClassName('typewrite');
+                    for (var i = 0; i < elements.length; i++) {
+                        var toRotate = elements[i].getAttribute('data-type');
+                        var period = elements[i].getAttribute('data-period');
+                        if (toRotate) {
+                            new TxtType(elements[i], JSON.parse(toRotate), period);
+                        }
+                    }
+                    // INJECT CSS
+                    var css = document.createElement("style");
+                    css.type = "text/css";
+                    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #5680E9}";
+                    document.body.appendChild(css);
+                };
+
+            </script>
+        </div>
+
+    </header>
+    <br><br>
+    <div class="w3-full" id="codiac">
+        <div class="w3-half w3-card-4 w3-light-grey height">
+            <p class="w3-text-pink w3-xxlarge text cardjustified">About Us</p>
+            <p class="w3-text-black w3-xlarge text">
+
+                Vishwakarma University is a natural offshoot of the Vishwakarma Group of Institutions educational
+                legacy spanning more than 35 years. The University focuses on academic excellence, positively impacting
+                the student community and the society at
+                large. The learning model at Vishwakarma University is the combination of knowing, practicing,
+                performing, and
+                reflecting.
+
+
+            </p>
+
+        </div>
+
+
+        <div class="w3-half height">
+            <img src="assets/img/Board_Room.jpg" class="image">
+        </div>
+
+    </div>
+
+
+
+    <div class="w3-full">
+
+        <div class="w3-half">
+            <img src="assets/img/department.png" class="image2 height">
+        </div>
+
+        <div class="w3-half" id="offer">
+            <div class="image2 w3-card-4 w3-light-grey height">
+                <p class="w3-text-pink w3-xxlarge text cardjustified">Departments</p>
+                <p class="w3-text-black w3-xlarge text w3-text-white">8 Programmes in various disciplines are offered by
+                    Vishwakarma University. <br> <br>
+                    course.</p>
+
+            </div>
+        </div>
+
+        <div class="w3-full">
+
+
+            <div class="w3-half">
+                <div class="image2 w3-card-4 w3-light-grey height">
+                    <p class="w3-text-pink w3-xxlarge text cardjustified">Centers of Excellence</p>
+                    <p class="w3-text-black w3-xlarge text">Vishwakarma University has establised many centers of
+                        excellence
+                        to benefit students.<br>
+                        <br>Click <A href='excel.html'>here</A> to know about university initiatives.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="w3-half">
+                <img src="assets/img/vu.png" class="height image2">
+            </div>
+        </div>
+
+        <div class="w3-full">
+
+            <div class="w3-half">
+                <img src="assets/img/acheivement.jpg" class="height image2">
+            </div>
+
+            <div class="w3-half h">
+                <div class="image2 w3-card-4 w3-light-grey height">
+                    <p class="w3-text-pink w3-xxlarge text cardjustified">Placements</p>
+                    <p class="w3-text-black w3-xlarge text">Dream Internships and Job Offers<br>
+                    <ul>
+                        <h2>
+                            <li>Nimisha Doshi - Amazon</li>
+                            <li>Karan Jagtiani - Hackerrank</li>
+                            <li>Siddhant Munot - Groww</li>
+                        </h2>
+                    </ul>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <br><br>
+        <div>
+
+            <p class="w3-xxxlarge w3-center"><span class="foot">&nbsp;&nbsp;</span></p>
+            <div class="w3-pale-red">
+                <br>
+                <p class="w3-xxxlarge w3-center">
+                    <span class="foot">Contact Us</span>
+                </p>
+                <div class="w3-xxxlarge w3-center">
+                    <div class="w3-center footlink whats"><a href="https://wa.me/+919511846735"
+                            style="text-decoration: none"><i class="fa fa-whatsapp"></i></a></div>
+                    <div class="w3-center footlink face"><a href="https://www.facebook.com/vishwakarmauniversity/"
+                            style="text-decoration: none"><i class="fa fa-facebook"></i></a></div>
+
+                    <div class="w3-center footlink tele"><a
+                            href="https://www.linkedin.com/school/vishwakarmauniversity/?originalSubdomain=in"
+                            style="text-decoration: none"><i class="fa fa-linkedin"></i></a></div>
+                    <div class="w3-center footlink insta"><a href="https://www.instagram.com/vishwakarmauniversity/"
+                            style="text-decoration: none"><i class="fa fa-instagram"></i></a></div>
+                    <div class="w3-center footlink mobi"><a href="tel:+919999999999" style="text-decoration: none"><i
+                                class="fa fa-mobile"></i></a></div>
+                </div>
+                <br>
+            </div>
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+h1 {
+    font-family: 'Fira Code';
+    font-size: 300%;
+}
+
+h2 {
+    font-family: 'Fira Code';
+    font-size: 200%;
+}
+
+td {
+    font-family: 'Fira Code';
+    font-size: 100%;
+}
+
+html {
+    color: white;
+    background-color: black;
+}
+
+input {
+    font-family: 'Fira Code';
+    font-size: 100%;
+    margin: 5px 0;
+}
+
+.ab {
+    background-color: Gray;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+}
+
+select {
+    font-family: 'Fira Code';
+    font-size: 100%;
+    margin: 5px 0;
+}
+
+.disabled {
+    background: #dddddd;
+    border-radius: 2px;
+    pointer-events: none;
+}

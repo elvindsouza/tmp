@@ -1,0 +1,53 @@
+.app {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    color: white;
+    align-items: center;
+    border: 1px solid green;
+    padding: 5px;
+    background-color: black;
+    width: 40%;
+    border-radius: 10px;
+}
+
+
+
+input {
+    float: right;
+}
+
+.required-field::after {
+    content: "*";
+    color: red;
+    margin-left: 2px
+}
+
+.padder {
+    padding: 2rem;
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-family: 'Fira Code';
+    border: none;
+    padding: 10px 15px;
+    border-radius: 12px;
+    background-color: #555555;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
