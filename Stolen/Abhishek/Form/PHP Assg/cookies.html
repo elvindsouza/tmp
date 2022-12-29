@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>Cookies example</title>
+</head>
+<body>
+<?php
+$cnt = $_COOKIE['cnt'];
+$cnt = $cnt + 1;
+echo "count : ".$cnt;
+setCookie(cnt, $cnt);
+
+?>
+</body>
+</html>

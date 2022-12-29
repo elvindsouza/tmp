@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Information Form</title>
+<script type="text/javascript">
+function valid() 
+{
+var na = document.getElementById("nm").value;
+var ag = document.getElementById("age").value;
+if(na==""||na==null)
+{
+alert("Enter The Name");
+return false;
+}
+else if(isNaN(ag)||ag<1||ag>20)
+{
+alert("The age must be a number between 1 and 20");
+return false;
+}
+else
+alert("The Student Information Submitted Successfully");
+}
+</script>
+</head>
+<body>
+<center><b>
+<h3>Student Information Form</h3>
+<form action="" onsubmit="return valid()" method="post">
+Name: <input type="text" id="nm"><br><br>
+Age: <input type="text" id="age"><br><br>
+<input type="submit" value="Submit">
+</form>
+</b></center>
+</body>
+</html>

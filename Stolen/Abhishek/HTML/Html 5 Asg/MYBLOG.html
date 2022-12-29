@@ -1,0 +1,195 @@
+<html>
+<head>
+<title>MY BLOG</title>
+<style>
+body {
+  font-family: Arial;
+  padding: 20px;
+  height: 300px;
+			margin:10px;
+            background: -webkit-linear-gradient(pink,yellow);  /* Chrome */
+            background: -o-linear-gradient(pink,yellow); /* Opera */
+            background: -moz-linear-gradient(pink,yellow); /*Mozilla Firefox */
+            background: linear-gradient(pink,yellow);  /* By default */
+	height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+h2
+		{
+            -moz-animation-duration: 3s;
+            -webkit-animation-duration: 3s;
+            -moz-animation-name: slidein;
+            -webkit-animation-name: slidein;
+         }
+		@-moz-keyframes slidein 
+		{
+            from {
+               margin-left:100%;
+               width:300%
+            }
+            to {
+               margin-left:0%;
+               width:100%;
+            }
+         }
+         @-webkit-keyframes slidein {
+            from {
+               margin-left:100%;
+               width:300%
+            }
+            to {
+               margin-left:0%;
+               width:100%;
+            }
+         }
+
+.header 
+{
+  padding: 30px;
+  font-size: 50px;
+  text-align: center;
+  background: white;
+}
+
+
+.football 
+{
+  background-image:url("football-history.jpg");
+  background-color: white;
+  height:400px;
+  width:400px;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.badminton 
+{
+  background-image:url("badminton.jpg");
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.TT 
+{
+  background-image:url("TT.jpg");
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  float:left;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  margin-top: 20px;
+}
+
+.multi {
+            /* Column count property */
+            -webkit-column-count: 4;
+            -moz-column-count: 4;
+            column-count: 4;
+            
+            /* Column gap property */
+            -webkit-column-gap: 40px; 
+            -moz-column-gap: 40px; 
+            column-gap: 40px;
+            
+            /* Column style property */
+            -webkit-column-rule-style: solid; 
+            -moz-column-rule-style: solid; 
+            column-rule-style: solid;
+         }
+		 
+	.button 
+	{
+	
+		background-color: white; 
+		color: black; 
+		border: 2px solid #f44336;
+		font-size: 17px;
+	}
+
+	.button:hover 
+	{
+		background-color: pink;
+		color: black;
+	}
+</style>
+</head>
+<body>
+	<div class="header">
+		<h3> Sports Blog</h3><br>
+			<button class="button">HOME</button>
+			<button class="button">ABOUT US</button>
+			<button class="button">GALLERY</button>
+			<button class="button">CONTACT US</button>
+			<hr>
+	</div>
+
+
+  
+   <div class="card">
+      <h2>FOOTBALL</h2>
+      <h5>Football Information, Dec 15, 2020</h5>
+		<div class="football" style="height:200px;"></div>
+		<p>Football is known as the most popular game in the world.</p>
+   </div>
+   
+   <div class="card">
+      <h2>Badminton</h2>
+      <h5>Badminton Information Nov 20, 2020</h5>
+		<div class="badminton" style="height:200px;"></div>
+		<p>The roots of the sport can be traced to ancient Greece, China, and India.</p>
+   </div>
+ 
+   <div class="card">
+      <h2>Table Tennis</h2>
+		<div class="TT" style="height:100px;"></div>
+		<p>sport that can be played individually against a single opponent (singles) or between two teams of two players each (doubles)</p>
+   </div>
+   
+   <div class="card">
+      <h3>Popular Post</h3>
+		<div class="multi">
+“Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do”
+― Pele 
+	  
+	  Badminton is a racquet sport played using racquets to hit a shuttlecock across a net. Although it may be played with larger teams, the most common forms of the game are "singles" (with one player per side) and "doubles" (with two players per side). 
+		
+		Table tennis, also known as ping-pong and whiff-whaff, is a sport in which two or four players hit a lightweight ball. 
+		
+		Tennis is a racket sport that can be played individually against a single opponent (singles) or between two teams of two players each (doubles). 
+	</div>
+    
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>I am a sports enthusiast and like to write short blogs. Follow this blog to get regular updates of sports around the world.</p>
+    </div>
+  </div>
+
+
+<div class="footer">
+  <h2>www.sportsblog.com</h2>
+</div>
+</body>
+</html>

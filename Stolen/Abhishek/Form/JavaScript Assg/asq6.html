@@ -1,0 +1,42 @@
+<html>
+<head>
+<script>
+function validate()
+{
+p = document.getElementById("pan").value;
+if(!p.match(/^[A-Z]{5}[0-9]{4}[A-Z]{1}$/))
+alert("Invalid");
+else
+
+alert("valid");
+}
+</script>
+</head>
+<body>
+<center>
+<form method="post">
+			<table cellpadding=10>
+				<tr>
+					<td><font size= 4> Name of customer: </td>
+					<td> <input type="text" id=cname> </td>
+				</tr>
+				<tr>
+					<td> <font size=4>name of bank: </td>
+					<td> <input type="text" id=bname> </td>
+				</tr>
+				<tr>
+					<td> <font size= 4> accno: </td>
+					<td> <input type="text" id=acno name=acno> </td>
+				</tr>
+				<tr>
+					<td> <font size= 4> pan no: </td>
+					<td> <input type="text" id=pan name=pan> </td>
+				</tr>
+				</table><br><br>
+			<input type="submit" name="submit" value="Submit">
+			<input type="reset" name="clear" value="Reset">
+		</form>
+</center>
+</body>
+</html>
+

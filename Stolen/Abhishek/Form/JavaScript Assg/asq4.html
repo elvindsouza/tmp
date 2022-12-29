@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+function pertichar()
+{
+varstr=document.getElementById("str1").value;
+alert(str);
+var c=parseInt(prompt("Enter postion to display character"))
+alert(str.charAt(c));
+}
+function count()
+{
+varstr=document.getElementById("str1").value;
+//alert(str);
+var c=prompt("Enter character")
+var i=0;
+varcnt=0;
+for(i=0;i {
+if(str[i]==c)
+cnt++;
+}
+alert("count"+cnt);
+}
+</script>
+</head>
+<body>
+Enter a String <input type=text name=str1 id=str1>
+<input type=radio name=chk value=1 onclick="count()">Count occurances of given
+character
+<input type=radio name=chk value=2 onclick="pertichar()">Character at
+position
+<input type="submit" value="pertichar()" name="b1
+</body>
+</html>

@@ -1,0 +1,49 @@
+/*Navigation Bar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  }
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+      }
+
+li a:hover:not(.active) {
+  background-color: darkblue;
+  }
+
+.active {
+  background-color: darkred;
+}
+body{
+  font-family: helevtica,serif ;
+   background-image: url("../Homepage/bghome.jpg");
+
+    }
+.header {
+  padding: 5px;
+  text-align: left;
+  background: blue;
+  color: white;
+  font-size: 20px;
+        }
+img{
+  float: right ;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+
+
+

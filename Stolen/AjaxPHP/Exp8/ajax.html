@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Stylesheet1.css">    
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript">
+        <!--
+            //Browser Support Code
+            function ajaxFunction(){
+                var ajaxRequest; // The variable that makes Ajax possible!
+                try{
+                // Opera 8.0+, Firefox, Safari
+                    ajaxRequest = new XMLHttpRequest();
+                }
+                catch (e){
+                // Internet Explorer Browsers
+                    try{
+                        ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
+                    }
+                    catch (e) {
+                        try{
+                            ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
+                        }
+                        catch (e){
+                            // Something went wrong
+                            alert("Your browser broke!");
+                            return false;
+                        }
+                    }
+                }
+            // Create a function that will receive data
+            // sent from the server and will update
+            // div section in the same page.
+            ajaxRequest.onreadystatechange = function(){
+                if(ajaxRequest.readyState == 4){
+                    var ajaxDisplay = document.getElementById('ajaxDiv');
+                    ajaxDisplay.innerHTML = ajaxRequest.responseText;
+                }
+            }
+            // Now get the value from user and pass it to
+            // server script.
+            var age = document.getElementById('age').value;
+            var wpm = document.getElementById('wpm').value;
+            var queryString = "?age=" + age ;
+            queryString += "&wpm=" + wpm ;
+            ajaxRequest.open("GET", "ajax-example.php" +queryString, true);
+            ajaxRequest.send(null);
+        }
+        //-->
+    </script>
+    <form name='myForm'>
+        <table border="2" width="90%" align="center" bgcolor="cyan">
+ 		<tr align="center">
+ 			<td><h1>Data Selection From Employee Table</h1></td>
+ 		</tr>
+ 		</table>
+        <table border="2" width="90%" align="center" bgcolor="pink">
+            <tr>
+ 				<td><b>&nbsp&nbsp&nbsp&nbsp Max Age:</b></td>
+    			<td>&nbsp&nbsp&nbsp&nbsp <input type='text' id='age' placeholder="Enter Max Age" required/></td>
+			</tr>
+            <tr>
+ 				<td><b>&nbsp&nbsp&nbsp&nbsp Max Salary:</b></td>
+    			<td>&nbsp&nbsp&nbsp&nbsp <input type='text' id='wpm'  placeholder="Enter Max Salary" required/></td>
+			</tr>
+            <tr align="center" bgcolor="cyan">
+    			<td><input type='button' onclick='ajaxFunction()' value='Query MySQL' class="ab"/></td>
+    			<td><input type="Reset" value="Cancel" class="ab" name="reset"></td>    			
+    		</tr>
+        </table>
+        
+    </form>
+    <center><b id='ajaxDiv'>Your result will display here</b></center>
+</body>
+</html>

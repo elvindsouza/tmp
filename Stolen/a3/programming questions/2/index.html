@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<title>
+    EBookShop Registration Form
+</title>
+
+<head>
+    <link href='https://code.cdn.mozilla.net/fonts/fira.css' rel='stylesheet' />
+    <link href='https://fonts.googleapis.com/css?family=Fira Code' rel='stylesheet' />
+    <link rel="stylesheet" href="registration.css" />
+    <script src="registrationvalidate.js" language="JavaScript"></script>
+    <style>
+        body {
+            background-color: lightslategrey;
+        }
+    </style>
+</head>
+
+<body style="font-family:Fira Code">
+    <div class="app">
+        <form>
+            <div class="container">
+                <center>
+                    <h1>EBookShop Registration Form</h1>
+                </center>
+                <hr><br>
+                <div name="registration" class="padder">
+
+                    <label class="required-field" for="book_id"><b>Book ID</b></label>
+                    <input name="bid" type="text" id="book_id" placeholder="Enter Book ID" required autofocus><br><br>
+
+                    <label class="required-field" for="book_title"><b>Book Title</b></label>
+                    <input name="btt" type="text" id="book_title" placeholder="Enter Book Title" required
+                        autofocus><br><br>
+
+                    <label class="required-field" for="book_author"><b>Book Author</b></label>
+                    <input name="bau" type="text" id="book_author" placeholder="Enter Book Author" required
+                        autofocus><br><br>
+
+                    <label class="required-field" for="book_price"><b>Book Price</b></label>
+                    <input name="bpr" type="text" id="book_price" placeholder="Enter Book Price" required
+                        autofocus><br><br>
+
+                    <label class="required-field" for="quantity"><b>Quantity</b></label>
+                    <input name="quan" type="text" id="quantity" placeholder="Enter Quantity" required
+                        autofocus><br><br>
+
+                    <label class="required-field" for="cust_name"><b>Customer Name</b></label>
+                    <input name="cname" type="text" id="cust_name" placeholder="Enter Customer Name" required
+                        autofocus><br><br>
+
+                    <label class="required-field" for="cust_email"><b>Customer Email</b></label>
+                    <input name="cemail" type="text" id="cust_email" placeholder="Enter Customer Email" required
+                        autofocus><br><br>
+
+                    <label class="required-field" for="cust_phone"><b>Customer Mobile Number</b></label>
+                    <input name="cph" type="text" id="cust_phone" placeholder="Enter Customer Mobile Number" required
+                        autofocus><br><br>
+
+                </div>
+                <div align="right">
+                    Fields marked with <span style="color:red">*</span> are required
+                </div>
+                <hr>
+                <br>
+                <div class="btn-center">
+                    <button class="btn" type="submit" class="registerbtn" onclick="valid()">Register</button>
+                </div>
+                <br>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

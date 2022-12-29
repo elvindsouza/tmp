@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title> Register.html </title>
+	</head>
+	<body bgcolor="powderblue">
+	<center>
+	<h1>Student Information Form</h1>
+		<form method="post">
+			<table cellpadding=10>
+				<tr>
+					<td><font size= 4> First Name : </td>
+					<td> <input type=text required> </td>
+				</tr>
+				<tr>
+					<td> <font size=4> Last Name : </td>
+					<td> <input type=text required> </td>
+				</tr>
+				<tr>
+					<td> <font size= 4> Date of Birth : </td>
+					<td> <input type=Date required> </td>
+				</tr>
+				<tr>
+					<td> <font size= 4> Mobile Number : </td>
+					<td> <input type= "tel" required> </td>
+				</tr>
+				<tr>
+					<td> <font size= 4> Gender : </td>
+					<td><input type="radio" id="male" name="gender" value="male">
+						<label for="male">Male</label><br>
+						<input type="radio" id="female" name="gender" value="female">
+						<label for="female">Female</label><br> 
+					</td>
+				</tr>
+				<tr>
+					<td> <font size= 4> Address : </td>
+					<td> <textarea cols="80" rows="5" value="address">  
+</textarea>   </td>
+				</tr>
+				<tr>
+					<td colspan=2><center>
+					<label for = "Country"><font size= 4> Courses : </label>
+					<select name="Courses" id="Courses">
+					<option value="BCA">BCA</option>
+					<option value="BCS">BCS</option>
+					<option value="China">MCA</option>
+					<option value="MSC.CS">MSC.CS</option>
+					</select>
+					</td>
+					</center>
+				</table><br><br>
+			<input type="submit" name="submit" value="Submit">
+			<input type="reset" name="clear" value="Reset">
+		</form>
+	</center>
+	</body>	
+</html>
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="tppc.xsl"?>
+<Placement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tppc.xsd">
+    <Job>
+        <Company_name>Tata</Company_name>
+        <technology_work>System Design</technology_work>
+        <avg_salary>123123.123</avg_salary>
+        <year_of_Startup>2019</year_of_Startup>
+    </Job>
+    <Job>
+        <Company_name>Hyundai</Company_name>
+        <technology_work>Distributed Systems Design</technology_work>
+        <avg_salary>12431234.1234</avg_salary>
+        <year_of_Startup>2000</year_of_Startup>
+    </Job>
+    <Job>
+        <Company_name>TCS</Company_name>
+        <technology_work>Code Monkey</technology_work>
+        <avg_salary>12312.312</avg_salary>
+        <year_of_Startup>2009</year_of_Startup>
+    </Job>
+    <Job>
+        <Company_name>MonkeyType</Company_name>
+        <technology_work>Front-end Engineer</technology_work>
+        <avg_salary>234.45324</avg_salary>
+        <year_of_Startup>2009</year_of_Startup>
+    </Job>
+    <Job>
+        <Company_name>YouTube</Company_name>
+        <technology_work>Back-end Engineer</technology_work>
+        <avg_salary>56748654.1234</avg_salary>
+        <year_of_Startup>2000</year_of_Startup>
+    </Job>
+</Placement>

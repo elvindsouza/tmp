@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #026da1;
+  color: orange;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #ebb700;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: red;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body background="bg.jpg">
+<center><img src="prahar.png" height="30%" width="15%"></center>
+<div class="about-section">
+  <h1>About Prahaar Defence Training Academy</h1>
+  <p><i>WE SHAPE THE FUTURE SCHOLAR WARRIORS </i> </p>
+  <p>Plot 3/4/5/6, Raopatil Garden Estates, Khadakwasla, Pune.</p>
+</div>
+<br>
+<h2 style="text-align:center"><b>Foundation of PDTA</b></h2>
+<h3 style="text-align:center">Prahaar Defence Training Academy,Pune was established by Lt.Col(RETD) Suresh Narayanrao Vaze (PVSM,AVSM,SM) in 2000 just after he returend from the Kargil War.
+Lt. Col Vaze was always very keen on developing leading gentlemen from boys just out of school. Prahaar DTA is the most elite written exam and SSB training Center.
+At PDTA we, with the help of our expert faculty and experienced personnel from the SSB train young boys and make them the most noticed candidates at the written as well as the SSBs.<br></h3>
+<h2 style="text-align:center"><b>Our Team</b></h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="vaze.jpg" alt="Lt.Col(RETD) Suresh Narayanrao Vaze" style="width:100%">
+      <div class="container">
+        <h2>Lt.Col(RETD) Suresh Narayanrao Vaze</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Kargil War veteran and our leader Lt.Col(RETD) Suresh Narayanrao Vaze (PVSM,AVSM,SM).He is the inspiration of each and every aspirant in the academy.</p>
+        <p>ltcolsnvaze@pdta.ac.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="ankush.jpg" alt="Dr.Ankushrao Bapat" style="width:100%">
+      <div class="container">
+        <h2>Dr.Ankushrao Pradeep Bapat (MD-Psychology & Brain Specialist)</h2>
+        <p class="title">Faculty Manager & Lead Psychologist</p>
+        <p>Dr.Ankushrao helps our students to highlight the hidden OLQs in them. He has been our mentor since many years</p>
+        <p>drankushraob@pdta.ac.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="vikas.jpg" alt="Dr.KMB" style="width:100%">
+      <div class="container">
+        <h2>Dr.Karthikeyan M Balakrishnan (MD-Sports Ortho & Physiotherapy)</h2>
+        <p class="title">Fitness Expert & Head SSB Coach</p>
+        <p>Dr.KMB helps and assists students in their SSB coaching and in maintaining physical fitness.</p>
+        <p>drkmb@pdta.ac.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

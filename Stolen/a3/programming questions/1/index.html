@@ -1,0 +1,58 @@
+<html>
+<title>
+    STUDENT REGISTRATION FORM
+</title>
+
+<head>
+    <link href='https://code.cdn.mozilla.net/fonts/fira.css' rel='stylesheet' />
+    <link href='https://fonts.googleapis.com/css?family=Fira Code' rel='stylesheet' />
+    <link rel="stylesheet" href="registration.css" />
+    <script src="registrationvalidate.js" language="JavaScript"></script>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body style="font-family:Fira Code">
+    <div class="app">
+        <form name="myform" action="">
+            <div class="container">
+                <center>
+                    <h1>STUDENT REGISTRATION FORM</h1>
+                </center>
+                <hr><br>
+                <div name="registration" class="padder">
+                    <label class="required-field" for="Name"><b>Student Name</b></label>
+                    <input name="fullname" type="text" placeholder="Enter Name" required autofocus><br><br>
+
+                    <label class="required-field" for="Phone Number"><b>Phone Number</b></label>
+                    <input name="phone" type="text" placeholder="Enter Phone Number" required><br><br>
+
+                    <label class="required-field" for="email"><b>Email</b></label>
+                    <input name="email" type="text" placeholder="Enter Email" name="email" id="email" required><br><br>
+
+                    <label class="required-field" for="psw"><b>Password</b></label>
+                    <input name="pwd" type="password" placeholder="Enter Password" name="psw" id="psw" required><br><br>
+
+                    <label class="required-field" for="psw-repeat"><b>Repeat Password</b></label>
+                    <input name="rpwd" type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat"
+                        required><br><br>
+                </div>
+
+                <div align="right">
+                    Fields marked with <span style="color:red">*</span> are required
+                </div>
+                <hr>
+                <br>
+                <div class="btn-center">
+                    <button class="btn" type="submit" class="registerbtn" onclick="valid()">Register</button>
+                </div>
+                <br>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<! DOCTYPE html>
+
+<html>
+	<head>
+		<title> header </title>
+		<style>
+         .backgr {
+  background-image: linear-gradient(to right, yellow , red);
+}
+#backdrop, #curtain {
+  height: 100px;
+  width: 200px;
+}
+
+#curtain {
+  position: relative;
+  top: -100px;
+}
+</style>
+
+	</head>
+	<body>
+	<div class="backgr">
+	<center>
+			<font style="font-family: impact;" size="8">K2 Adventures And Trekkers</font><img src="hiker.png" height="60" width="60"><BR>
+				<small><font style="font-family: arial;">India’s Largest & Safest Trekking Organisation</font><small><br><br>
+				<input type="button" value="HOME" hspace="20">
+				<input type="button" value="ABOUT US" hspace="20">
+				<input type="button" value="CONTACT US" hspace="20">
+				<input type="button" value="GALLERY" hspace="20"><br>
+				<hr>
+			</font>
+			<marquee behavior=alternate direction=right bgcolor="lime" height=30><font color="blue" size="5" style="font-family:candara;">**NEW TREK FOR TIKONA FORT STARTING SOON**</font>
+			<br>
+			</marquee><hr>
+		<fieldset>
+			<legend><font style="font-family: verdana;"><b> Please Fill Out The Form Given Below To Get Customised Trekking Plan from Sunshine Adventures And Trekkers</font></legend><br><br>
+			<form action="ThankYou.html">
+				<table cellpadding=10>
+					<tr>
+						<td><font size= 4> First Name : </td>
+						<td><input placeholder = "first name" type="text" tabindex="1" required autofocus id="Firstname" name="fname"></td>
+					</tr>
+					<tr>
+						<td><font size= 4> Last Name : </td>
+						<td><input placeholder = "last name" type="text" tabindex="1" required autofocus id="Lastname" name="lname"></td>
+					</tr>
+					<tr>
+					<td><font size= 4>Gender : </td>
+						<td><input type="radio" name="gender" value="Male" id="male">Male
+						<input type="radio" name="gender" value="Female" id="Female">Female</td>
+					</tr>
+					<tr>
+						<td><font size= 4> Date Of Birth : </td>
+						<td><input type="date" name="adate" id="adate" required></td>
+					</td>
+					<tr>
+					<td> <font size= 4 required> Choice of Trek : </td>
+					<td><input type="checkbox" id="Sinhagad" name="Sinhagad" value="Sinhagad">
+						<label for="Sinhagad">Sinhagad</label><br>
+						<input type="checkbox" id="Lohagad" name="Lohagad" value="Lohagad">
+						<label for="Lohagad">Lohagad</label><br>
+						<input type="checkbox" id="Raigad" name="Raigad" value="Raigad">
+						<label for="Raigad">Raigad</label><br>
+						<input type="checkbox" id="Koriagad" name="Koriagad" value="Koriagad">
+						<label for="Koriagad">Koriagad</label><br>
+					</td>
+					</tr>
+					<td><font size= 4>Difficulty Level : </td>
+						<td><input type="radio" name="Level" value="Easy" id="Easy">Easy
+						<input type="radio" name="Level" value="Moderate" id="Moderate">Moderate
+						<input type="radio" name="Level" value="Hard" id="Hard">Hard</td>
+					</tr>
+					<tr>
+						<td><font size= 4> Day Of Trek : </td>
+						<td><input type="date" name="tdate" id="tdate" required>
+					</td>
+					<tr>
+						<td><font size= 4> Time Of Trek : </td>
+						<td><input type="time" name="ttime" id="ttime" required>
+					</td>
+					<tr>
+						<td><font size= 4> Budget(500rs-2000rs) : </td>
+						<td><input type = "range" name="price" min="500" max="2000" tabindex="1" id="range" required></td>		
+					</tr>
+					<tr>
+						<td><font size= 4> Email : </td>
+						<td><input type="email" list="email-choices" id="mail" name="mail" required></td>
+						<td><datalist id="email-choices">
+						<option label="marty halll" value="h@gmail.com">
+						<option label="marty BALL" value="Tgmail@gmail.com">
+						</datalist></td>
+					</tr>
+					<tr>
+						<td><font size= 4> Cell(optional) : </td>
+						<td><input type="tel" id="phone" name="phone"></td>		
+					</tr>
+				</table><br><br>
+						<input type="submit" name="submit" value="Submit">
+						<input type="reset" name="reset" value="reset">
+			</form>
+		</fieldset>	<br><br>
+			
+			
+			
+			
+		
+			<img src="f1.jpg" height="150" width="150" hspace="20" align="bottom" /> 
+			<img src="f2.jpg" height="150" width="150" hspace="20" />
+			<img src="f3.jpg" height="150" width="150" hspace="20" />
+			<img src="f4.jpg" height="150" width="150" hspace="20" /> 
+			<img src="f5.jpg" height="150" width="150" hspace="20" />			
+			<img src="f2.jpg" height="150" width="150" hspace="20" />
+	</body>
+	
+</html>

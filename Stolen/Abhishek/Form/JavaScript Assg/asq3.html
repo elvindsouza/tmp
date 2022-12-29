@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>CLOCK</title>
+<script type="text/javascript"> 
+function display_c()
+{
+var refresh=10000; // Refresh rate in milli seconds
+mytime=setTimeout('display_ct()',refresh)
+}
+
+function display_ct() 
+{
+var x = new Date()
+document.getElementById('t1').value = x;
+display_c();
+ }
+</script>
+</head>
+
+<body onload=display_ct();>
+<input type=text id='t1' size='70'>
+</body>
+</html>
